@@ -9,6 +9,7 @@ const formatAmount = (amount = 0, decPlaces = 3) => {
 
 const Game = ({ game, activeTab, jackpots }) => {
   const [imageError, setImageError] = React.useState(false);
+  if(!game) return null
   return (
     <div
       className={`game-wrapper col-xxl-auto col-xl-3 col-md-4 col-sm-6 ${
