@@ -62,7 +62,7 @@ export default function Tabs() {
 
   const fetchGames = async () => {
     const { data } = await axios.get(
-      "http://stage.whgstage.com/front-end-test/games.php"
+      "https://stage.whgstage.com/front-end-test/games.php"
     );
     if (data) {
       setGames(data);
@@ -71,7 +71,7 @@ export default function Tabs() {
 
   const fetchJackpot = async () => {
     const { data } = await axios.get(
-      "http://stage.whgstage.com/front-end-test/jackpots.php"
+      "https://stage.whgstage.com/front-end-test/jackpots.php"
     );
     if (data) {
       setJackpots(data);
